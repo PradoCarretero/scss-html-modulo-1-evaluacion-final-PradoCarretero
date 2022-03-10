@@ -1,0 +1,15 @@
+@mixin button {
+  width: 176px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: $darkcolor;
+  /* font */
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: $secundarycolor-1;
+}

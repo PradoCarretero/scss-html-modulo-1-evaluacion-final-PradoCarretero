@@ -1,18 +1,29 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+/* .boxb {
+  background-color: brown;
+  height: 215px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100px;
+} */
 .header {
   background-color: yellow;
   width: 100%;
   height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .menu {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 96px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 1.188em; /* 19px */
+  margin-top: 1.188em; /* 19px */
   &__burger {
     margin: auto auto;
     &--img {
@@ -25,7 +36,17 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  margin-top: 215px;
+  height: auto;
+  flex-grow: 1;
+
+  /*   margin-top: 215px; */
   background-color: aquamarine;
+  @include title2;
+  &__button {
+    @include button;
+    margin-top: 24px;
+    margin-bottom: 64px;
+  }
 }

@@ -4,7 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; */
   &__text {
-    @include title1;
+    @include title2;
     text-align: center;
   }
   &__itemsbox {
