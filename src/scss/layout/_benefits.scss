@@ -1,0 +1,30 @@
+.benefits {
+  background-color: $secundarycolor-2;
+  /*   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; */
+  &__text {
+    text-align: center;
+  }
+  &__itemsbox {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.item {
+  /* display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  width: 13em;
+  &__img {
+    width: 90px;
+    height: 90px;
+  }
+  &__title {
+  }
+
+  &__text {
+  }
+}

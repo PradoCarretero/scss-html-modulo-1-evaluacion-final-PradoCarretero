@@ -4,3 +4,105 @@ $lightcolor: #ff975a;
 $secundarycolor-1: #fff;
 $secundarycolor-2: #f0ebe5;
 $secundarycolor-3: #b6c8c9;
+
+/* fonts */
+
+@mixin title1 {
+  width: 148px;
+  height: 48px;
+  margin: 14px 60px 0 0;
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0c474b;
+}
+
+@mixin subtitle1 {
+  width: 208px;
+  height: 48px;
+  margin: 62px 0 47px;
+  font-family: Poppins;
+  font-size: 30px;
+  color: #0c474b;
+}
+
+@mixin subtitle1b {
+  width: 208px;
+  height: 48px;
+  margin: 42px 0 5px;
+  font-family: Poppins;
+  font-size: 30px;
+  color: #b6c8c9;
+}
+@mixin title2 {
+  width: 208px;
+  height: 23px;
+  margin: 9px 0 23px;
+  font-family: Poppins;
+  font-size: 24px;
+  text-align: left;
+  color: #0c474b;
+}
+
+@mixin title2b {
+  width: 208px;
+  height: 23px;
+  margin: 5px 67px 9px 3px;
+  font-family: Poppins;
+  font-size: 24px;
+  color: #b6c8c9;
+}
+
+@mixin paragraph1 {
+  width: 208px;
+  height: 23px;
+  margin: 46px 0 30px;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #0c474b;
+}
+
+@mixin paragraph1b {
+  width: 208px;
+  height: 23px;
+  margin: 23px 0 0;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #b6c8c9;
+}
+
+@mixin title3 {
+  width: 208px;
+  height: 23px;
+  margin: 23px 0 0;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #b6c8c9;
+}
+
+@mixin title3b {
+  width: 208px;
+  height: 23px;
+  margin: 9px 0 23px;
+  font-family: Poppins;
+  font-size: 20px;
+  color: #0c474b;
+}
+
+@mixin paragraph2b {
+  width: 208px;
+  height: 23px;
+  margin: 23px 0 0;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #b6c8c9;
+}
+
+@mixin paragraph2 {
+  width: 208px;
+  height: 23px;
+  margin: 46px 0 23px;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #0c474b;
+}
