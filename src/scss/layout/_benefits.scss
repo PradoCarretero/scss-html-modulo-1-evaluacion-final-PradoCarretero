@@ -4,6 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; */
   &__text {
+    @include title1;
     text-align: center;
   }
   &__itemsbox {
@@ -14,17 +15,16 @@
 }
 
 .item {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr; */
   width: 13em;
   &__img {
     width: 90px;
     height: 90px;
   }
   &__title {
+    @include title3;
   }
 
   &__text {
+    @include paragraph1;
   }
 }
