@@ -16,6 +16,27 @@ body {
     padding-top: 55px;
     text-decoration: none;
     color: $darkcolor;
+    @include tablet {
+      padding-left: 82px;
+      padding-top: 75px;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__pc {
+    display: none;
+    @include desktop {
+      position: absolute;
+      top: 76px;
+      display: flex;
+      padding-left: 280px;
+      &--item {
+        text-decoration: none;
+        padding-right: 30px;
+      }
+    }
   }
   &__logo {
     position: absolute;
@@ -39,9 +60,22 @@ body {
   background: url("https://i.postimg.cc/sxY4D1Tv/header.jpg") center center
     no-repeat;
   background-size: cover;
+
+  @include tablet {
+    align-items: flex-start;
+    padding-left: 280px;
+    padding-bottom: 200px;
+  }
+  @include desktop {
+    padding-bottom: 465px;
+  }
   &__title {
     @include title2($darkcolor);
     line-height: 38px;
+    @include tablet {
+      font-size: 36px;
+      width: 420px;
+    }
   }
   &__button {
     @include button;
