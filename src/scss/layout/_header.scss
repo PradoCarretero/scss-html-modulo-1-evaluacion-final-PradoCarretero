@@ -12,13 +12,10 @@ body {
 .menu {
   &__burger {
     position: fixed;
-    margin-left: 33px;
-    margin-top: 55px;
-
-    &--img {
-      width: 1.563em;
-      height: 1.563em;
-    }
+    padding-left: 33px;
+    padding-top: 55px;
+    text-decoration: none;
+    color: $darkcolor;
   }
   &__logo {
     position: absolute;

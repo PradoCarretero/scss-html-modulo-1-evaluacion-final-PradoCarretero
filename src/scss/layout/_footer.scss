@@ -9,9 +9,29 @@
 }
 
 .article {
-  padding-top: 40px;
+  padding-top: 37px;
 
   &__title {
     @include title3($secundarycolor-1);
   }
+  &__nav--item {
+    text-decoration: none;
+    color: $secundarycolor-1;
+    @include paragraph2($secundarycolor-1);
+  }
+
+  .fa-brands {
+    padding-right: 7px;
+    margin-top: 30px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.arrow {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 30px;
 }
