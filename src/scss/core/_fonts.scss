@@ -7,64 +7,33 @@
   color: #0c474b;
 }
 
-@mixin subtitle1 {
+@mixin subtitle1($color) {
   font-family: Poppins;
   font-size: 30px;
-  color: #0c474b;
+  color: $color;
 }
 
-@mixin subtitle1b {
-  font-family: Poppins;
-  font-size: 30px;
-  color: #b6c8c9;
-}
-@mixin title2 {
+@mixin title2($color) {
   font-family: Poppins;
   font-size: 24px;
   font-weight: 600;
-  text-align: left;
-  color: #0c474b;
+  color: $color;
 }
 
-@mixin title2b {
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 600;
-  color: #b6c8c9;
-}
-
-@mixin paragraph1 {
-  font-family: Poppins;
-  font-size: 16px;
-  color: #0c474b;
-}
-
-@mixin paragraph1b {
-  font-family: Poppins;
-  font-size: 16px;
-  color: #b6c8c9;
-}
-
-@mixin title3b {
-  font-family: Poppins;
-  font-size: 16px;
-  color: #b6c8c9;
-}
-
-@mixin title3 {
+@mixin title3($color) {
   font-family: Poppins;
   font-size: 20px;
-  color: #0c474b;
+  font-weight: 600;
+  color: $color;
 }
 
-@mixin paragraph2b {
+@mixin paragraph1($color) {
   font-family: Poppins;
-  font-size: 14px;
-  color: #b6c8c9;
+  font-size: 16px;
+  color: $color;
 }
-
-@mixin paragraph2 {
+@mixin paragraph2($color) {
   font-family: Poppins;
   font-size: 14px;
-  color: #0c474b;
+  color: $color;
 }

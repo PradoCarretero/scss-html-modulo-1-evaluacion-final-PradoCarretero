@@ -2,67 +2,128 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Openspaces</title>
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header class="header">
+      <div class="boxb"></div>
+      <section class="menu">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <a class="menu__burger" href="https://adalab.es">
+          <img
+            class="menu__burger--img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2qzjGHx362VfxQWKWwi2GCEoyqUnsRIm9jEF2oIlWx6Z76KjowacdQTq8s4UfonUSnA&usqp=CAU"
+            alt=""
+          />
+        </a>
+        <a href=" https://adalab.es"
+          ><img
+            src="./assets/images/logo.png"
+            alt="logo open spaces"
+            title="Ir al index de OpenSpaces"
+        /></a>
+      </section>
+      <section class="hero">
+        <h2>Disfruta creando espacios</h2>
+        <a href=" https://adalab.es"
+          ><button class="hero__button">Comprar ahora</button></a
+        >
+      </section>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+
+    <main>
+      <section class="benefits">
+        <h2 class="benefits__text">
+          Volverse organizado se siente mejor con openspaces
+        </h2>
+        <div class="benefits__itemsbox">
+          <article class="item">
+            <img class="item__img" src="./assets/images/icon_1.png" alt="otems on a table" />
+            <h3 class="item__title">Lo que necesitas</h3>
+            <p class="item__text">Una línea de productos diseñados para todos tus espacios</p>
+          </article>
+
+          <article class="item">
+            <img class="item__img" src="./assets/images/icon_2.png" alt="symbol of recycling" />
+            <h3 class="item__title">Materia primas sustentables</h3>
+            <p class="item__text">Todos los productos con materias primas sustentables</p>
+          </article>
+
+          <article class="item">
+            <img class="item__img" src="./assets/images/icon_3.png" alt="guide" />
+            <h3 class="item__title">Guía</h3>
+            <p class="item__text">Soporte y asesoramiento para ayudarte con tu objetivo</p>
+          </article>
+
+        </div>
+      </section>
+
+      <section>
+        <img src="./assets/images/icon_4.png" alt="Truck" />
+        <h2>Envío gratis garantizado</h2>
+        <p>Envío gratis en compras desde 100</p>
+        <a href=" https://adalab.es">Comprar ahora</a>
+      </section>
+
+      <section>
+        <h2>Disfruta creando espacios</h2>
+        <p>Una línea de productos diseñados para todos tus espacios</p>
+        <a href=" https://adalab.es"><button>Comprar ahora</button></a>
+      </section>
+      <section>
+        <img src="" alt="" />
+      </section>
+
+    </main>
+    <footer>
+      <article>
+        <h2>Tienda</h2>
+        <nav>
+          <ul>
+            <li><a href=" https://adalab.es">Productos</a></li>
+            <li><a href=" https://adalab.es">Cajoneras</a></li>
+            <li><a href=" https://adalab.es">Para toda la casa</a></li>
+            <li><a href=" https://adalab.es">Habitaciones</a></li>
+          </ul>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Nosotros</h2>
+        <nav>
+          <ul>
+            <li><a href=" https://adalab.es">Nuestra guía</a></li>
+            <li><a href=" https://adalab.es">Nuestro diseño</a></li>
+            <li><a href=" https://adalab.es">Nuestra historia</a></li>
+            <li><a href=" https://adalab.es">Ayuda</a></li>
+          </ul>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Contacto</h2>
+        <ul>
+          <li>ayuda@openspaces.com</li>
+          <!-- ver si puedo llevar a mail.. -->
+          <li><a href=" https://adalab.es">Socios</a></li>
         </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </article>
+      <!--   images de instagram... -->
+      <!-- flecha scss -->
+    </footer>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
-      </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>

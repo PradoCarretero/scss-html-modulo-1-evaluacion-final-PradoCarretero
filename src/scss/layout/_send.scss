@@ -1,0 +1,8 @@
+.send {
+  height: 350px;
+  background-color: $lightcolor;
+
+  &__title {
+    @include title2($secundarycolor-1);
+  }
+}

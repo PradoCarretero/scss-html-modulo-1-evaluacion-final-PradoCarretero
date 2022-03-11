@@ -1,11 +1,14 @@
 .benefits {
   background-color: $secundarycolor-2;
-  /*   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; */
+  display: grid;
+  justify-content: center;
+  text-align: center;
   &__text {
-    @include title2;
+    @include title2($darkcolor);
     text-align: center;
+    width: 322px;
+    padding-top: 45px;
+    padding-bottom: 7px;
   }
   &__itemsbox {
     display: grid;
@@ -16,15 +19,20 @@
 
 .item {
   width: 13em;
+  margin-top: 30px;
+  margin-bottom: 18px;
   &__img {
     width: 90px;
     height: 90px;
   }
   &__title {
-    @include title3;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    @include title3($darkcolor);
   }
 
   &__text {
-    @include paragraph1;
+    @include paragraph1($darkcolor);
+    height: 96px;
   }
 }
