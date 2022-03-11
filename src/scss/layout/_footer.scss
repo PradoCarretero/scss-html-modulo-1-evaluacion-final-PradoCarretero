@@ -1,0 +1,17 @@
+.footer {
+  padding-left: 146px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  background-color: $darkcolor;
+  height: 545px;
+}
+
+.article {
+  padding-top: 40px;
+
+  &__title {
+    @include title3($secundarycolor-1);
+  }
+}

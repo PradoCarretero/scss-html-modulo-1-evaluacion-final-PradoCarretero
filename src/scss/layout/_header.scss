@@ -44,7 +44,7 @@ body {
   background-size: cover;
   &__title {
     @include title2($darkcolor);
-    height: 38px;
+    line-height: 38px;
   }
   &__button {
     @include button;

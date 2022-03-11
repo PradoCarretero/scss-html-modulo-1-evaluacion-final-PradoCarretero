@@ -37,3 +37,10 @@
   font-size: 14px;
   color: $color;
 }
+
+@mixin link1 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: $secundarycolor-1;
+}
