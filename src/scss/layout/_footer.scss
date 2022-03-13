@@ -1,23 +1,48 @@
-.footer {
+.footerbox {
   padding-left: 146px;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: flex-start;
   text-align: left;
   background-color: $darkcolor;
   height: 545px;
+
+  @include tablet {
+    flex-direction: row;
+    height: 276px;
+    padding-left: 0px;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  @include desktop {
+    height: 393px;
+    /* padding: 0 200px; */
+  }
 }
 
 .article {
   padding-top: 37px;
+  @include tablet {
+    padding-top: 0px;
+    padding-bottom: 82px;
+  }
+  @include desktop {
+    padding-bottom: 138px;
+  }
 
   &__title {
     @include title3($secundarycolor-1);
+    @include desktop {
+      @include title2($secundarycolor-1);
+    }
   }
   &__nav--item {
     text-decoration: none;
     color: $secundarycolor-1;
     @include paragraph2($secundarycolor-1);
+    @include desktop {
+      @include paragraph1($secundarycolor-1);
+    }
   }
 
   .fa-brands {
@@ -29,9 +54,27 @@
 }
 
 .arrow {
+  flexbox-grow: 1;
   width: 100%;
+  text-align: right;
+  padding-right: 30px;
+  transform: translateY(-100%);
+  @include tablet {
+    width: auto;
+    transform: translateY(0%);
+    padding-right: 0px;
+    padding-bottom: 82px;
+    @include desktop {
+      padding-bottom: 138px;
+    }
+  }
+  /* width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding-right: 30px;
+
+  @include tablet {
+    width: auto;
+  } */
 }

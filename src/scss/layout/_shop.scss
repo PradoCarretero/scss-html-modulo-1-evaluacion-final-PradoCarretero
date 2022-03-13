@@ -1,19 +1,42 @@
+.shopbox {
+  @include desktop {
+    display: flex;
+    height: 571px;
+  }
+}
 .shop {
   background-color: $secundarycolor-2;
   height: 339px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 87px 27px 92px 27px;
   text-align: center;
+  @include desktop {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 280px;
+    justify-content: center;
+    text-align: left;
+  }
 
   &__title {
     @include title2($darkcolor);
+    @include desktop {
+      width: 10em;
+      @include title1;
+    }
   }
   &__text {
     @include paragraph2($darkcolor);
     margin-top: 15px;
     margin-bottom: 29px;
+    @include desktop {
+      width: 19em;
+      @include paragraph1($darkcolor);
+    }
   }
 
   &__button {
@@ -23,13 +46,15 @@
 .shopimg {
   height: 304px;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
-
-  &__img {
-    @include tablet {
-      display: block;
-      width: 100%;
-    }
+  background: url("https://i.postimg.cc/3Rcj6nnH/creando-espacios.jpg") center
+    center no-repeat;
+  background-size: cover;
+  @include tablet {
+    height: 474px;
+  }
+  @include desktop {
+    height: 571px;
+    width: 100%;
+    flex-grow: 1;
   }
 }
