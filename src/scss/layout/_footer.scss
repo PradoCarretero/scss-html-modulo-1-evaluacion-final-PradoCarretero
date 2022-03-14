@@ -21,6 +21,7 @@
 }
 
 .article {
+  z-index: 3;
   padding-top: 37px;
   @include tablet {
     padding-top: 0px;
@@ -59,6 +60,7 @@
   text-align: right;
   padding-right: 30px;
   transform: translateY(-100%);
+
   @include tablet {
     width: auto;
     transform: translateY(0%);

@@ -8,8 +8,12 @@ body {
   max-height: 100vh;
   display: flex;
   flex-direction: column;
+  @include tablet {
+    min-height: 650px;
+  }
 }
 .menu {
+  z-index: 99;
   &__burger {
     position: fixed;
     padding-left: 33px;
@@ -32,14 +36,18 @@ body {
       top: 76px;
       display: flex;
       padding-left: 280px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       &--item {
         text-decoration: none;
         padding-right: 30px;
+        @include paragraph1($darkcolor);
       }
     }
   }
   &__logo {
     position: absolute;
+    z-index: -1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -73,7 +81,7 @@ body {
     @include title2($darkcolor);
     line-height: 38px;
     @include tablet {
-      font-size: 36px;
+      @include title1;
       width: 420px;
     }
   }
