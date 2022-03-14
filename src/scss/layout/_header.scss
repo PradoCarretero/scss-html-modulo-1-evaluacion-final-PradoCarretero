@@ -52,6 +52,9 @@ body {
     display: flex;
     justify-content: center;
     top: 19px;
+    @include tablet {
+      top: 39px;
+    }
     &--picture {
       height: 96px;
     }
@@ -71,7 +74,7 @@ body {
 
   @include tablet {
     align-items: flex-start;
-    padding-left: 280px;
+    padding-left: 147px;
     padding-bottom: 200px;
   }
   @include desktop {

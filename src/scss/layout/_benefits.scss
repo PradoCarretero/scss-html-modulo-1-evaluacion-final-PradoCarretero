@@ -11,6 +11,10 @@
     grid-auto-flow: row;
     text-align: center;
     justify-items: center;
+    height: 532px;
+  }
+  @include desktop {
+    height: 611px;
   }
   &__text {
     @include title2($darkcolor);
@@ -21,6 +25,7 @@
     @include tablet {
       grid-column: span 3;
       width: 100%;
+      padding-top: 63px;
     }
     @include desktop {
       width: 800px;
@@ -32,6 +37,9 @@
     width: 13em;
     margin-top: 30px;
     margin-bottom: 18px;
+    @include tablet {
+      margin-top: 50px;
+    }
     &__img {
       width: 90px;
       height: 90px;

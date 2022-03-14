@@ -6,6 +6,7 @@
   text-align: left;
   background-color: $darkcolor;
   height: 545px;
+  padding-top: 20px;
 
   @include tablet {
     flex-direction: row;
@@ -21,7 +22,7 @@
 
 .article {
   z-index: 3;
-  padding-top: 37px;
+  padding-top: 30px;
   @include tablet {
     padding-top: 0px;
     padding-bottom: 82px;
@@ -58,6 +59,7 @@
   width: 100%;
   text-align: right;
   padding-right: 30px;
+  margin-top: 20px;
   transform: translateY(-100%);
 
   @include tablet {

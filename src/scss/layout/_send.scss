@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    height: 400px;
+  }
 
   &__img {
     height: 120px;
