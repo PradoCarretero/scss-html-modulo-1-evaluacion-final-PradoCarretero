@@ -1,6 +1,6 @@
 @mixin button {
-  width: 176px;
-  height: 48px;
+  width: 11em;
+  height: 3em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -9,15 +9,12 @@
   background-color: $darkcolor;
   border: 0;
   transition: background-color ease 1s, border ease 1s;
+  /* font */
+  text-decoration: none;
+  @include paragraph1($secundarycolor-1);
+  font-weight: 600;
   &:hover {
     border: solid 3px $lightcolor;
     background-color: $lightcolor;
   }
-}
-
-.button {
-  text-decoration: none;
-  /* font */
-  @include paragraph1($secundarycolor-1);
-  font-weight: 600;
 }

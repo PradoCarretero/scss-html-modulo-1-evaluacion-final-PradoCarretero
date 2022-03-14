@@ -1,25 +1,28 @@
 .shopbox {
   @include desktop {
     display: flex;
+    flex-direction: row;
     height: 571px;
   }
 }
 .shop {
   background-color: $secundarycolor-2;
   height: 339px;
-  flex-grow: 1;
+  /* flex-shrink: 1; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 87px 27px 92px 27px;
   text-align: center;
   @include desktop {
-    height: 100%;
+    box-sizing: border-box;
+    height: auto;
     width: 100%;
     align-items: flex-start;
-    padding-left: 280px;
     justify-content: center;
     text-align: left;
+    padding-left: 480px;
   }
 
   &__title {
@@ -48,15 +51,20 @@
 .shopimg {
   height: 304px;
   overflow: hidden;
-  background: url("https://i.postimg.cc/3Rcj6nnH/creando-espacios.jpg") center
-    center no-repeat;
-  background-size: cover;
+  background: url($pathimage + "creando-espacios.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 150%;
   @include tablet {
+    background-position: left bottom;
+    background-size: 115%;
     height: 474px;
   }
   @include desktop {
-    height: 571px;
+    height: auto;
     width: 100%;
-    flex-grow: 1;
+    background-position: left bottom;
+    background-size: 150%;
+    flex-grow: 2;
   }
 }

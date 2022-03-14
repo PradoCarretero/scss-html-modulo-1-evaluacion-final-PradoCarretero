@@ -13,6 +13,8 @@
     width: 120px;
     margin-top: 46px;
     margin-bottom: 12px;
+    background: url($pathimage + "icon_4.png");
+    background-size: cover;
   }
   &__title {
     @include title2($secundarycolor-1);

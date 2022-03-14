@@ -68,10 +68,10 @@ body {
   align-items: center;
   height: auto;
   flex-grow: 1;
-  background: url("https://i.postimg.cc/sxY4D1Tv/header.jpg") center center
-    no-repeat;
+  /* background: url("https://i.postimg.cc/sxY4D1Tv/header.jpg") center center
+    no-repeat; */
+  background: url($pathimage + "header.jpg") center center no-repeat;
   background-size: cover;
-
   @include tablet {
     align-items: flex-start;
     padding-left: 147px;
