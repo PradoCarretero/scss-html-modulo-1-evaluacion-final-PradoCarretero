@@ -24,9 +24,11 @@
 
   &__title {
     @include title2($darkcolor);
+    @include tablet {
+      @include title1($darkcolor);
+    }
     @include desktop {
       width: 10em;
-      @include title1;
     }
   }
   &__text {

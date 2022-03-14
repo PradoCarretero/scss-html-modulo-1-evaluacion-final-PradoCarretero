@@ -1,10 +1,9 @@
 /* fonts */
 
-@mixin title1 {
+@mixin title1($color) {
   font-family: Poppins;
   font-size: 36px;
   font-weight: 600;
-  color: #0c474b;
 }
 
 @mixin subtitle1($color) {

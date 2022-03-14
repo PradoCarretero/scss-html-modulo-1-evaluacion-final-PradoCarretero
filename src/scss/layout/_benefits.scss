@@ -24,6 +24,7 @@
     }
     @include desktop {
       width: 800px;
+      @include title1($darkcolor);
     }
   }
 
@@ -39,6 +40,9 @@
       margin-top: 30px;
       margin-bottom: 12px;
       @include title3($darkcolor);
+      @include desktop {
+        @include title2($darkcolor);
+      }
     }
 
     &__text {

@@ -13,12 +13,21 @@
   }
   &__title {
     @include title2($secundarycolor-1);
+    @include tablet {
+      @include subtitle1($secundarycolor-1);
+    }
+    @include desktop {
+      @include title1($secundarycolor-1);
+    }
   }
 
   &__text {
     @include paragraph2($secundarycolor-1);
     margin-top: 10px;
     margin-bottom: 20px;
+    @include desktop {
+      @include paragraph1($secundarycolor-1);
+    }
   }
 
   &__link {

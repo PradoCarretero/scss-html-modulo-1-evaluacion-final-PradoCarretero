@@ -81,7 +81,7 @@ body {
     @include title2($darkcolor);
     line-height: 38px;
     @include tablet {
-      @include title1;
+      @include title1($darkcolor);
       width: 420px;
     }
   }
