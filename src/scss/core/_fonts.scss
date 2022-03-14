@@ -2,45 +2,45 @@
 
 @mixin title1($color) {
   font-family: Poppins;
-  font-size: 36px;
+  font-size: 2.25em;
   font-weight: 600;
   line-height: 1.7em;
 }
 
 @mixin subtitle1($color) {
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 1.875em;
   color: $color;
 }
 
 @mixin title2($color) {
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 600;
   color: $color;
 }
 
 @mixin title3($color) {
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
   color: $color;
 }
 
 @mixin paragraph1($color) {
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1em;
   color: $color;
 }
 @mixin paragraph2($color) {
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 0.875em;
   color: $color;
 }
 
 @mixin link1 {
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   color: $secundarycolor-1;
 }

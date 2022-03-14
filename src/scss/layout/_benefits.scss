@@ -19,26 +19,26 @@
   &__text {
     @include title2($darkcolor);
     text-align: center;
-    width: 322px;
-    padding-top: 45px;
-    padding-bottom: 7px;
+    width: 20.125rem;
+    padding-top: 2.813em;
+    padding-bottom: 0.438em;
     @include tablet {
       grid-column: span 3;
       width: 100%;
       padding-top: 63px;
     }
     @include desktop {
-      width: 800px;
+      width: 50em;
       @include title1($darkcolor);
     }
   }
 
   .item {
     width: 13em;
-    margin-top: 30px;
-    margin-bottom: 18px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.125rem;
     @include tablet {
-      margin-top: 50px;
+      margin-top: 3.125rem;
     }
 
     &__img {
@@ -46,8 +46,8 @@
       height: 90px;
     }
     &__title {
-      margin-top: 30px;
-      margin-bottom: 12px;
+      margin-top: 1.875rem;
+      margin-bottom: 0.75rem;
       @include title3($darkcolor);
       @include desktop {
         @include title2($darkcolor);
@@ -56,7 +56,6 @@
 
     &__text {
       @include paragraph1($darkcolor);
-      height: 96px;
     }
   }
 }

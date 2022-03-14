@@ -13,16 +13,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 87px 27px 92px 27px;
+  padding: 5.438rem 1.688rem 5.75rem 1.688rem;
   text-align: center;
   @include desktop {
     box-sizing: border-box;
     height: auto;
-    width: 100%;
+    width: 50%;
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    padding-left: 480px;
+    padding-left: 17.5rem;
   }
 
   &__title {
@@ -36,8 +36,8 @@
   }
   &__text {
     @include paragraph2($darkcolor);
-    margin-top: 15px;
-    margin-bottom: 29px;
+    margin-top: 0.938rem;
+    margin-bottom: 1.813rem;
     @include desktop {
       width: 19em;
       @include paragraph1($darkcolor);
@@ -62,9 +62,8 @@
   }
   @include desktop {
     height: auto;
-    width: 100%;
+    width: 50%;
     background-position: left bottom;
     background-size: 150%;
-    flex-grow: 2;
   }
 }

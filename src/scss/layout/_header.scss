@@ -11,18 +11,21 @@ body {
   @include tablet {
     min-height: 650px;
   }
+  @include desktop {
+    min-height: 900px;
+  }
 }
 .menu {
   z-index: 99;
   &__burger {
     position: fixed;
-    padding-left: 33px;
-    padding-top: 55px;
+    padding-left: 2.063rem;
+    padding-top: 3.438rem;
     text-decoration: none;
     color: $darkcolor;
     @include tablet {
-      padding-left: 82px;
-      padding-top: 75px;
+      padding-left: 5.125rem;
+      padding-top: 4.688rem;
     }
     @include desktop {
       display: none;
@@ -35,12 +38,12 @@ body {
       position: absolute;
       top: 76px;
       display: flex;
-      padding-left: 280px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-left: 17.5rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
       &--item {
         text-decoration: none;
-        padding-right: 30px;
+        padding-right: 1.875rem;
         @include paragraph1($darkcolor);
       }
     }
@@ -53,7 +56,7 @@ body {
     justify-content: center;
     top: 19px;
     @include tablet {
-      top: 39px;
+      top: 2.438rem;
     }
     &--picture {
       height: 96px;
@@ -68,29 +71,29 @@ body {
   align-items: center;
   height: auto;
   flex-grow: 1;
+  max-width: 100%;
   /* background: url("https://i.postimg.cc/sxY4D1Tv/header.jpg") center center
     no-repeat; */
   background: url($pathimage + "header.jpg") center center no-repeat;
   background-size: cover;
   @include tablet {
     align-items: flex-start;
-    padding-left: 147px;
-    padding-bottom: 200px;
+    padding-left: 9.188rem;
+    padding-bottom: 12.5rem;
   }
   @include desktop {
-    padding-bottom: 465px;
+    padding-bottom: 29.063rem;
   }
   &__title {
     @include title2($darkcolor);
-    line-height: 38px;
+    line-height: 2.375em;
     @include tablet {
       @include title1($darkcolor);
-      width: 420px;
     }
   }
   &__button {
     @include button;
-    margin-top: 24px;
-    margin-bottom: 64px;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
   }
 }
