@@ -35,7 +35,7 @@ body {
   &__pc {
     display: none;
     @include desktop {
-      position: absolute;
+      position: fixed;
       top: 76px;
       display: flex;
       padding-left: 17.5rem;
