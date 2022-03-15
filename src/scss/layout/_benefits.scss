@@ -15,6 +15,7 @@
   }
   @include desktop {
     height: 611px;
+    padding: 0 500px;
   }
   &__text {
     @include title2($darkcolor);
